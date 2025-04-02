@@ -1,0 +1,11 @@
+
+<p>home works!</p>
+
+<h1> this is Home Page </h1>
+<div *ngFor="let recipes of recipes"> 
+    <div>
+        <h1>{{recipes.id}}</h1>
+        <p>{{recipes.name}}</p> 
+        <img [src]="recipes.image" style="height: 500px; width: 500px;" />
+    </div>
+</div>

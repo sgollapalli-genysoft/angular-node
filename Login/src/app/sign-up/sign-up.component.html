@@ -1,0 +1,34 @@
+<p> Sign up </p>
+
+
+<div>
+
+<form [formGroup]="signup" (ngSubmit)="onsubmit()"> 
+  
+    <div> 
+        <input  id="Name" placeholder="Enter the full Name " formControlName="name">
+    </div>
+
+    <div> 
+        <input placeholder="age"  formControlName = "age">
+    </div>
+
+
+     <div> 
+        <input type="number"  placeholder="Phone Number" formControlName="phone">
+      </div>
+
+      <div> 
+        <input type="text"  placeholder="username" formControlName="username">
+    </div>
+
+    <div> 
+        <input type="password"  placeholder="password" formControlName="password">
+    </div>
+    
+    <button type="submit"> click to Sign Up  </button>
+
+</form>
+    
+
+</div>

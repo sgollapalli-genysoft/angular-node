@@ -1,0 +1,36 @@
+<p>signup works!</p>
+
+
+<div class="container">
+    <h2>Sign Up</h2>
+  
+    <form (ngSubmit)="onSubmit()">
+      <div>
+        <input type="text" 
+               [(ngModel)]="username" 
+               name="username" 
+               placeholder="Username" 
+               required>
+      </div>
+      <div>
+        <input type="email" 
+               [(ngModel)]="email" 
+               name="email" 
+               placeholder="Email" 
+               required>
+      </div>
+      <div>
+        <input type="password" 
+               [(ngModel)]="password" 
+               name="password" 
+               placeholder="Password" 
+               required>
+      </div>
+  
+      <button type="submit">Sign Up</button>
+    </form>
+  
+    <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+    <div *ngIf="successMessage" class="success">{{ successMessage }}</div>
+  </div>
+  
